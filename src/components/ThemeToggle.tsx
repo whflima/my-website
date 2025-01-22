@@ -13,7 +13,7 @@ export default function ThemeToggle() {
     <Switch
       checked={theme === "dark"}
       onChange={() => setTheme(theme === Modes.DARK ? Modes.LIGHT : Modes.DARK)}
-      size="lg"
+      size="md"
       startContent={<SunIcon />}
       endContent={<MoonIcon />}
     />
