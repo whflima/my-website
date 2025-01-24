@@ -8,14 +8,16 @@ interface Skills {
 export default function SkillsSection() {
   const myskills: Skills[] = [
     { skill: "Git", value: 80 },
-    { skill: "GitHub", value: 75 },
     { skill: "Java", value: 80 },
+    { skill: "GitHub", value: 75 },
+    { skill: "HTML", value: 65 },
     { skill: "TypeScript", value: 60 },
     { skill: "JavaScript", value: 60 },
-    { skill: "Oracle SQL", value: 55 },
-    { skill: "PostgreSQL", value: 50 },
-    { skill: "MongoDB", value: 30 },
     { skill: "Spring Boot", value: 60 },
+    { skill: "PostgreSQL", value: 50 },
+    { skill: "Oracle SQL", value: 55 },
+    { skill: "CSS", value: 40 },
+    { skill: "MongoDB", value: 30 },
     { skill: "AWS", value: 30 },
   ];
 
@@ -26,7 +28,7 @@ export default function SkillsSection() {
           <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
             Technical skills
           </h1>
-          <p className="font-normal text-gray-500 text-xs md:text-base">
+          <p className="font-normal text-gray-500 text-xs md:text-base text-justify">
             Always eager to explore and experiment with new and emerging
             technologies, I continuously expand my skill set to tackle diverse
             challenges and create innovative solutions.

@@ -28,19 +28,13 @@ export default function Header() {
           <Link href="#home">Home</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#about">About</Link>
-        </NavbarItem>
-        <NavbarItem>
           <Link href="#skills">Skills</Link>
         </NavbarItem>
         <NavbarItem>
           <Link href="#projects">Projects</Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#timeline">Timeline</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#contact">Contact</Link>
+          <Link href="#education">Education</Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
