@@ -36,6 +36,9 @@ export default function Header() {
         <NavbarItem>
           <Link href="#education">Education</Link>
         </NavbarItem>
+        <NavbarItem>
+          <Link href="#certification">Certifications</Link>
+        </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
         <ThemeToggle />

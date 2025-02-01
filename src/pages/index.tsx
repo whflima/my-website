@@ -1,3 +1,4 @@
+import CertificationSection from "@/components/CertificationSection";
 import EducationSection from "@/components/EducationSection";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
@@ -12,6 +13,7 @@ export default function Home() {
       <SkillsSection />
       <ProjectsSection />
       <EducationSection />
+      <CertificationSection />
     </main>
   );
 }
