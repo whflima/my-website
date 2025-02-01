@@ -5,6 +5,8 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
+  NavbarMenu,
+  NavbarMenuItem,
   NavbarMenuToggle,
 } from "@heroui/react";
 import { useState } from "react";
@@ -12,6 +14,15 @@ import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const menuItems = [
+    "Home",
+    "Skills",
+    "Projects",
+    "Education",
+    "Certifications",
+  ];
+
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
       <NavbarContent>
@@ -24,25 +35,29 @@ export default function Header() {
         </NavbarBrand>
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link href="#home">Home</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#skills">Skills</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#projects">Projects</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#education">Education</Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="#certification">Certifications</Link>
-        </NavbarItem>
+        {menuItems.map((item, index) => (
+          <NavbarItem key={`${item}-${index}`}>
+            <Link href={`#${item.toLowerCase()}`}>{item}</Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
       <NavbarContent justify="end">
         <ThemeToggle />
       </NavbarContent>
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              className="w-full"
+              color="foreground"
+              href={`#${item.toLowerCase()}`}
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
     </Navbar>
   );
 }
