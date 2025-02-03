@@ -21,6 +21,7 @@ export default function Header() {
     "Projects",
     "Education",
     "Certifications",
+    "Career"
   ];
 
   return (

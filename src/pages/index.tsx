@@ -1,3 +1,4 @@
+import CareerHistorySection from "@/components/CareerHistorySection";
 import CertificationSection from "@/components/CertificationSection";
 import EducationSection from "@/components/EducationSection";
 import Header from "@/components/Header";
@@ -12,6 +13,7 @@ export default function Home() {
       <HomeSection />
       <SkillsSection />
       <ProjectsSection />
+      <CareerHistorySection />
       <EducationSection />
       <CertificationSection />
     </main>
