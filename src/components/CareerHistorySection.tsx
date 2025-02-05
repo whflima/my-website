@@ -7,10 +7,11 @@ export default function CareerHistorySection() {
             Career history
           </h1>
           <p className="font-normal text-gray-500 text-xs md:text-base text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            quam sapiente quas dolorem aspernatur? Dolorem nemo, natus eveniet
-            officiis soluta est amet fugiat commodi quam ut blanditiis maiores
-            maxime laborum.
+            With experience at Philips and Capgemini, I have built scalable
+            backend solutions using Java, Spring, and AWS. My work spans
+            healthcare and financial software, focusing on performance,
+            security, and system optimization to drive innovation and
+            efficiency.
           </p>
         </div>
         <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
@@ -19,11 +20,11 @@ export default function CareerHistorySection() {
               <h3 className="font-medium text-gray-700 text-lg lg:text-xl">
                 Software Developer at Philips
               </h3>
-              <p className="mt-2 leading-6 font-normal text-gray-500 text-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
-                quaerat. Quo maxime labore, consectetur deleniti hic inventore
-                in nulla, magnam officiis iste voluptatum illum esse? Culpa odit
-                voluptatibus qui officia.
+              <p className="mt-2 leading-6 font-normal text-gray-500 text-md text-justify">
+                At Philips, I developed healthcare software using Java,
+                TypeScript, and Oswald, focusing on performance, security, and
+                usability, while optimizing applications and collaborating on
+                customer solutions.
               </p>
               <span className="absolute text-sm font-semibold text-gray-500 -top-5 left-2 whitespace-nowrap">
                 July 2022 – August 2024
@@ -48,11 +49,11 @@ export default function CareerHistorySection() {
               <h3 className="font-medium text-gray-700 text-lg lg:text-xl">
                 Junior Software Developer at Capgemini
               </h3>
-              <p className="mt-2 leading-6 font-normal text-gray-500 text-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum,
-                iure minus. Accusantium doloremque debitis architecto sint quo
-                obcaecati, sunt pariatur numquam. Voluptates, nobis asperiores?
-                Repudiandae eius voluptas sunt architecto aliquam.
+              <p className="mt-2 leading-6 font-normal text-gray-500 text-md text-justify">
+                At Capgemini, I developed backend solutions for Banco Bradesco
+                using Java, ensuring performance and scalability, while
+                conducting testing, validation, and collaborating in an agile
+                environment.
               </p>
               <span className="absolute text-sm font-semibold text-gray-500 -top-5 left-2 whitespace-nowrap">
                 June 2021 – July 2022
@@ -66,11 +67,11 @@ export default function CareerHistorySection() {
                 Software Developer Intern at National Institute of Information
                 Technology of Brazil
               </h3>
-              <p className="mt-2 leading-6 font-normal text-gray-500 text-md">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
-                maiores explicabo non ut sapiente debitis assumenda, est tempora
-                nemo ex labore doloribus voluptatum distinctio facere vitae quam
-                quas dolorem tenetur!
+              <p className="mt-2 leading-6 font-normal text-gray-500 text-md text-justify">
+                At National Institute of Information Technology of Brazil, I
+                assisted in developing the SGB² application for managing digital
+                certificates, participated in agile processes, and supported the
+                security and efficiency of digital transactions.
               </p>
               <span className="absolute text-sm font-semibold text-gray-500 -top-5 left-2 whitespace-nowrap">
                 January 2021 – June 2021
@@ -95,11 +96,11 @@ export default function CareerHistorySection() {
               <h3 className="font-medium text-gray-700 text-lg lg:text-xl">
                 IT Support(Part-time) at Rede SARAH
               </h3>
-              <p className="mt-2 leading-6 font-normal text-gray-500 text-md">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Perspiciatis quibusdam, consequuntur odit quod magni quam
-                eveniet quo excepturi ea dignissimos nobis enim obcaecati
-                numquam cumque? Impedit et consequatur laboriosam ut!
+              <p className="mt-2 leading-6 font-normal text-gray-500 text-md text-justify">
+                At Sarah Hospital, I provided IT support, installing and
+                configuring printers, systems, and software, troubleshooting
+                infrastructure issues, and assisting in technology
+                implementation.
               </p>
               <span className="absolute text-sm font-semibold text-gray-500 -top-5 left-2 whitespace-nowrap">
                 December 2018 – January 2021
