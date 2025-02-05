@@ -25,10 +25,10 @@ export default function SkillsSection() {
     <section id="skills" className="py-10 md:py-16">
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="mb-10">
-          <h1 className="font-medium text-gray-700 text-3xl md:text-4xl mb-5">
+          <h1 className="font-medium text-gray-700 dark:text-white text-3xl md:text-4xl mb-5">
             Technical skills
           </h1>
-          <p className="font-normal text-gray-500 text-xs md:text-base text-justify">
+          <p className="font-normal text-gray-500 dark:text-gray-400 text-xs md:text-base text-justify">
             Always eager to explore and experiment with new and emerging
             technologies, I continuously expand my skill set to tackle diverse
             challenges and create innovative solutions.

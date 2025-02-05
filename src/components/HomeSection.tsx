@@ -15,13 +15,13 @@ export default function HomeSection() {
                 alt="Personal photo"
               />
             </div>
-            <h6 className="font-medium text-gray-600 text-lg md:text-2xl uppercase mb-8">
+            <h6 className="font-medium text-gray-600 dark:text-gray-400 text-lg md:text-2xl uppercase mb-8">
               Welisson Lima
             </h6>
-            <h1 className="font-normal text-gray-900 text-4xl md:text-7xl leading-none mb-8">
+            <h1 className="font-normal text-gray-900 dark:text-white text-4xl md:text-7xl leading-none mb-8">
               Software developer
             </h1>
-            <p className="font-normal text-gray-600 text-md md:text-xl mb-8">
+            <p className="font-normal text-gray-600 dark:text-gray-400 text-md md:text-xl mb-8">
               Software developer with experience in Java and healthcare
               solutions, and AWS certifications.
             </p>
