@@ -17,6 +17,7 @@ Watch the video below for a quick demo of how the application works:
 > **Note:** The video may take some time to load. Please be patient.
 
 ![video-contacts-app](https://github.com/user-attachments/assets/f6da516a-5f50-4e6c-b815-aa0d6ee982fa)
+
 -->
 
 ## Prerequisites
