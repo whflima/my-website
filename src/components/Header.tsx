@@ -12,17 +12,37 @@ import {
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    "Home",
-    "Skills",
-    "Projects",
-    "Education",
-    "Certifications",
-    "Career"
+    {
+      title: "header.menu.items-home",
+      sectionHref: "#home",
+    },
+    {
+      title: "header.menu.items-skills",
+      sectionHref: "#skills",
+    },
+    {
+      title: "header.menu.items-projects",
+      sectionHref: "#projects",
+    },
+    {
+      title: "header.menu.items-education",
+      sectionHref: "#education",
+    },
+    {
+      title: "header.menu.items-certifications",
+      sectionHref: "#certifications",
+    },
+    {
+      title: "header.menu.items-career",
+      sectionHref: "#career",
+    },
   ];
 
   return (
@@ -30,7 +50,7 @@ export default function Header() {
       <NavbarContent>
         <NavbarMenuToggle
           className="sm:hidden"
-          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-label={isMenuOpen ? t('navbar.menu.toggle.aria.label-close') : t('navbar.menu.toggle.aria.label-open')}
         ></NavbarMenuToggle>
         <NavbarBrand>
           <p className="font-bold text-inherit">Welisson Lima</p>
@@ -38,8 +58,8 @@ export default function Header() {
       </NavbarContent>
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         {menuItems.map((item, index) => (
-          <NavbarItem key={`${item}-${index}`}>
-            <Link href={`#${item.toLowerCase()}`}>{item}</Link>
+          <NavbarItem key={index}>
+            <Link href={item.sectionHref}>{t(item.title)}</Link>
           </NavbarItem>
         ))}
       </NavbarContent>
@@ -49,14 +69,14 @@ export default function Header() {
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem key={index}>
             <Link
               className="w-full"
               color="foreground"
-              href={`#${item.toLowerCase()}`}
+              href={item.sectionHref}
               size="lg"
             >
-              {item}
+              {t(item.title)}
             </Link>
           </NavbarMenuItem>
         ))}

@@ -1,4 +1,12 @@
 {
+  "header.menu.items-home": "Início",
+  "header.menu.items-skills": "Habilidades",
+  "header.menu.items-projects": "Projetos",
+  "header.menu.items-education": "Educação",
+  "header.menu.items-certifications": "Certificações",
+  "header.menu.items-career": "Carreira",
+  "navbar.menu.toggle.aria.label-open": "Abrir menu",
+  "navbar.menu.toggle.aria.label-close": "Fechar menu",
   "language.switcher.flag": "./brazil-flag.svg",
   "language.switcher.items-english": "Inglês",
   "language.switcher.items-spanish": "Espanhol",

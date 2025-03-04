@@ -1,4 +1,12 @@
 {
+  "header.menu.items-home": "Inicio",
+  "header.menu.items-skills": "Habilidades",
+  "header.menu.items-projects": "Proyectos",
+  "header.menu.items-education": "Educación",
+  "header.menu.items-certifications": "Certificaciones",
+  "header.menu.items-career": "Carrera",
+  "navbar.menu.toggle.aria.label-open": "Abrir menú",
+  "navbar.menu.toggle.aria.label-close": "Cerrar menú",
   "language.switcher.flag": "./spain-flag.svg",
   "language.switcher.items-english": "Inglés",
   "language.switcher.items-spanish": "Español",
