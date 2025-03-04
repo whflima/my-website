@@ -1,15 +1,17 @@
+import { useTranslation } from "react-i18next";
+
 export default function ProjectsSection() {
+  const { t } = useTranslation();
   return (
     <section id="projects" className="py-10 md:py-16">
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="mb-10 lg:mb-0 pr-4">
             <h1 className="font-medium text-gray-700 dark:text-white text-3xl md:text-4xl mb-5">
-              Projects
+              {t("header.menu.items-projects")}
             </h1>
             <p className="font-normal text-gray-500 dark:text-gray-400 text-xs md:text-base text-justify">
-              A collection of projects that demonstrate my skills in solving
-              problems and creating innovative solutions.
+              {t("projects.section-short_description")}
             </p>
           </div>
           <div className="space-y-24">
@@ -20,13 +22,10 @@ export default function ProjectsSection() {
               <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-                  Weather App
+                  {t("projects.section.title-weather_project")}
                 </h1>
                 <p className="font-normal text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
-                  A React TypeScript app that retrieves and displays weather
-                  data from the OpenWeatherMap API, allowing users to search for
-                  current weather information, including temperature, humidity,
-                  wind speed, and conditions in a user-friendly interface.
+                  {t("projects.section.description-weather_project")}
                 </p>
               </div>
             </div>
@@ -37,13 +36,10 @@ export default function ProjectsSection() {
               <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-                  Contacts application
+                  {t("projects.section.title-contacts_project")}
                 </h1>
                 <p className="font-normal text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
-                  A contacts application that enables users to easily browse and
-                  manage their contact list across multiple devices. This app
-                  was developed as part of a technical test for a Software
-                  Developer position at Resonate.
+                  {t("projects.section.description-contacts_project")}
                 </p>
               </div>
             </div>
@@ -54,13 +50,10 @@ export default function ProjectsSection() {
               <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
               <div>
                 <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-                  Personal website
+                  {t("projects.section.title-website_project")}
                 </h1>
-                <p className="font-normal text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
-                  This is my personal website, a place where you can learn more
-                  about my technical expertise, discover my projects, and follow
-                  my journey in software development, innovation, and
-                  problem-solving.
+                <p className="font-norm al text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
+                  {t("projects.section.description-website_project")}
                 </p>
               </div>
             </div>
