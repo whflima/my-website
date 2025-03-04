@@ -11,6 +11,7 @@ import {
 } from "@heroui/react";
 import { useState } from "react";
 import ThemeToggle from "./ThemeToggle";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,6 +45,7 @@ export default function Header() {
       </NavbarContent>
       <NavbarContent justify="end">
         <ThemeToggle />
+        <LanguageSwitcher />
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (

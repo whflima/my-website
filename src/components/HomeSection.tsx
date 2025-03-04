@@ -11,7 +11,7 @@ export default function HomeSection() {
                 className="rounded-full"
                 width={262}
                 height={262}
-                src="https://lh3.googleusercontent.com/a/ACg8ocLu1XsyfzEK6FERDMUn5aC7VXH_glo6L8LOxdSU7knV2ErrKxkV3w=s360-c-no"
+                src="./photo.jpg"
                 alt="Personal photo"
               />
             </div>
