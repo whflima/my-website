@@ -1,4 +1,5 @@
 import { Progress } from "@heroui/react";
+import { useTranslation } from "react-i18next";
 
 interface Skills {
   skill: string;
@@ -6,6 +7,7 @@ interface Skills {
 }
 
 export default function SkillsSection() {
+  const { t } = useTranslation();
   const myskills: Skills[] = [
     { skill: "Git", value: 80 },
     { skill: "Java", value: 80 },
@@ -26,12 +28,10 @@ export default function SkillsSection() {
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="mb-10">
           <h1 className="font-medium text-gray-700 dark:text-white text-3xl md:text-4xl mb-5">
-            Technical skills
+            {t("skills.section-title")}
           </h1>
           <p className="font-normal text-gray-500 dark:text-gray-400 text-xs md:text-base text-justify">
-            Always eager to explore and experiment with new and emerging
-            technologies, I continuously expand my skill set to tackle diverse
-            challenges and create innovative solutions.
+            {t("skills.section-short_description")}
           </p>
         </div>
 
