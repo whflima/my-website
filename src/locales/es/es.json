@@ -1,4 +1,13 @@
 {
+  "education.section-short_description": "Cuento con una sólida formación académica que combina teoría y habilidades prácticas, proporcionando una base sólida para abordar desafíos del mundo real.",
+  "education.section.title-bachelor": "Licenciatura en Ciencias de la Computación",
+  "education.section.date-bachelor": "2019 - 2023",
+  "education.section.description-bachelor": "Una carrera enfocada en programación, algoritmos, estructuras de datos y diseño de sistemas. Desarrollé fuertes habilidades para resolver problemas y experiencia práctica en desarrollo de software y sistemas informáticos.",
+  "education.section.average_performance-bachelor": "Rendimiento promedio: 8.21/10.0",
+  "education.section.title-technician": "Curso de Técnico en Informática",
+  "education.section.date-technician": "2016 - Incompleto",
+  "education.section.description-technician": "Un curso centrado en la solución de problemas de hardware, configuración de redes y mantenimiento de sistemas. Adquirí experiencia práctica en diagnóstico de problemas técnicos y brindando soporte IT en diferentes entornos.",
+  "education.section.average_performance-technician": "Rendimiento promedio: -",
   "header.menu.items-home": "Inicio",
   "header.menu.items-skills": "Habilidades",
   "header.menu.items-projects": "Proyectos",

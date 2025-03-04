@@ -1,4 +1,13 @@
 {
+  "education.section-short_description": "I hold a strong educational background that blends theory and practical skills, providing a solid foundation for tackling real-world challenges.",
+  "education.section.title-bachelor": "Bachelor of Computer Science",
+  "education.section.date-bachelor": "2019 - 2023",
+  "education.section.description-bachelor": "A degree focused on programming, algorithms, data structures, and system design. Developed strong problem-solving skills and hands-on experience with software development and computer systems.",
+  "education.section.average_performance-bachelor": "Average Performance: 8.21/10.0",
+  "education.section.title-technician": "IT Technician Course",
+  "education.section.date-technician": "2016 - Incomplete",
+  "education.section.description-technician": "A course focused on hardware troubleshooting, network setup, and system maintenance. Gained hands-on experience in diagnosing technical issues and providing IT support across different environments.",
+  "education.section.average_performance-technician": "Average Performance: -",
   "header.menu.items-home": "Home",
   "header.menu.items-skills": "Skills",
   "header.menu.items-projects": "Projects",
