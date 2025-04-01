@@ -1,3 +1,4 @@
+import { IMyProviderContext } from "@/@types/provider";
 import { LocalStorageItems, Modes } from "@/constant";
 import { createContext, useEffect, useState } from "react";
 
