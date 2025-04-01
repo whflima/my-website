@@ -4,6 +4,7 @@ import darkModeSetup from "../utils/darkModeSetup";
 import { useContext } from "react";
 import { MyContext } from "./MyProvider";
 import { Modes } from "@/constant";
+import { IMyProviderContext } from "@/@types/provider";
 
 export default function ThemeToggle() {
   const { theme, setTheme } = useContext(MyContext) as IMyProviderContext;
