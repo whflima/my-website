@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import ProjectDropdown from "./ProjectDropdown";
 
 export default function ProjectsSection() {
   const { t } = useTranslation();
@@ -21,9 +22,19 @@ export default function ProjectsSection() {
               </h1>
               <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
               <div>
-                <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-                  {t("projects.section.title-weather_project")}
-                </h1>
+                <div className="flex gap-4">
+                  <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
+                    {t("projects.section.title-weather_project")}
+                  </h1>
+                  <ProjectDropdown
+                    site={{
+                      url: "https://whflima.github.io/weather-app/",
+                    }}
+                    github={{
+                      url: "https://github.com/whflima/weather-app",
+                    }}
+                  />
+                </div>
                 <p className="font-normal text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
                   {t("projects.section.description-weather_project")}
                 </p>
@@ -35,9 +46,19 @@ export default function ProjectsSection() {
               </h1>
               <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
               <div>
-                <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-                  {t("projects.section.title-contacts_project")}
-                </h1>
+                <div className="flex gap-4">
+                  <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
+                    {t("projects.section.title-contacts_project")}
+                  </h1>
+                  <ProjectDropdown
+                    site={{
+                      url: "https://whflima.github.io/contacts-react-app/",
+                    }}
+                    github={{
+                      url: "https://github.com/whflima/contacts-react-app",
+                    }}
+                  />
+                </div>
                 <p className="font-normal text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
                   {t("projects.section.description-contacts_project")}
                 </p>
@@ -49,9 +70,21 @@ export default function ProjectsSection() {
               </h1>
               <span className="w-28 h-0.5 bg-gray-300 mt-5"></span>
               <div>
-                <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
-                  {t("projects.section.title-website_project")}
-                </h1>
+                <div className="flex gap-4">
+                  <h1 className="font-normal text-gray-700 dark:text-gray-200 text-3xl md:text-4xl mb-5">
+                    {t("projects.section.title-website_project")}
+                  </h1>
+                  <ProjectDropdown
+                    site={{
+                      url: "https://whflima.github.io/my-website/",
+                      blocked: true
+                    }}
+                    github={{
+                      url: "https://github.com/whflima/my-website",
+                    }}
+                  />
+                </div>
+
                 <p className="font-norm al text-gray-500 dark:text-gray-400 text-sm md:text-base text-justify">
                   {t("projects.section.description-website_project")}
                 </p>
