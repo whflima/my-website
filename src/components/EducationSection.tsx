@@ -16,6 +16,22 @@ export default function EducationSection() {
         <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-6">
           <div className="bg-gray-50 dark:bg-gray-800 px-8 py-10 rounded-md">
             <div className="flex flex-col sm:flex-row justify-between font-medium text-gray-700 dark:text-white text-lg mb-4">
+              <p>{t("education.section.title-advanced-diploma")}</p>
+              <p className="text-gray-500 dark:text-gray-300">
+                {t("education.section.date-advanced-diploma")}
+              </p>
+            </div>
+            <p className="font-normal text-gray-500 dark:text-gray-400 text-md mb-4 text-justify">
+              {t("education.section.description-advanced-diploma")}
+            </p>
+            <div className="relative">
+              <h6 className="font-semibold text-gray-500 dark:text-gray-300 text-md relative z-10">
+                {t("education.section.average_performance-advanced-diploma")}
+              </h6>
+            </div>
+          </div>
+          <div className="bg-gray-50 dark:bg-gray-800 px-8 py-10 rounded-md">
+            <div className="flex flex-col sm:flex-row justify-between font-medium text-gray-700 dark:text-white text-lg mb-4">
               <p>{t("education.section.title-bachelor")}</p>
               <p className="text-gray-500 dark:text-gray-300">
                 {t("education.section.date-bachelor")}
@@ -30,7 +46,7 @@ export default function EducationSection() {
               </h6>
             </div>
           </div>
-          <div className="bg-gray-50 dark:bg-gray-800 px-8 py-10 rounded-md">
+          {/* <div className="bg-gray-50 dark:bg-gray-800 px-8 py-10 rounded-md">
             <div className="flex flex-col sm:flex-row justify-between font-medium text-gray-700 dark:text-white text-lg mb-4">
               <p>{t("education.section.title-technician")}</p>
               <p className="text-gray-500 dark:text-gray-300">
@@ -45,7 +61,7 @@ export default function EducationSection() {
                 {t("education.section.average_performance-technician")}
               </h6>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
