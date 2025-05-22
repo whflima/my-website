@@ -6,15 +6,13 @@ import {
   Image,
 } from "@heroui/react";
 import { useTranslation } from "react-i18next";
-import i18n from "@/utils/i18n.index";
+import { useContext } from "react";
+import { IMyProviderContext } from "@/@types/provider";
+import { MyContext } from "./MyProvider";
 
 export default function LanguageSwitcher() {
   const { t } = useTranslation();
-
-  const changeLanguage = (language: string) => {
-    console.log(t("language.switcher.flag"));
-    i18n.changeLanguage(language);
-  };
+  const { changeLanguage } = useContext(MyContext) as IMyProviderContext;
 
   const languageOptions = [
     {

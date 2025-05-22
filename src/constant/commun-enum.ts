@@ -4,8 +4,16 @@ enum Modes {
   SYSTEM = 'system',
 }
 
-enum LocalStorageItems {
-  THEME = 'theme',
+enum Language {
+  PORTUGUESE = 'pt-br',
+  ENGLISH = 'en',
+  SPANISH = 'es',
+  DEFAULT = ENGLISH,
 }
 
-export { Modes, LocalStorageItems };
+enum LocalStorageItems {
+  THEME = 'theme',
+  LANGUAGE = 'language',
+}
+
+export { Modes, Language, LocalStorageItems };
