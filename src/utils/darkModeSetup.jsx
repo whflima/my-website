@@ -1,5 +1,4 @@
-import { useEffect } from 'react';
-import { LocalStorageItems, Modes } from '../constant';
+import { LocalStorageItems, Modes } from "../constant";
 
 function onWindowMatch(theme) {
   if (
@@ -13,34 +12,30 @@ function onWindowMatch(theme) {
 }
 
 function useEffectFunction(theme) {
-  useEffect(() => {
-    switch (theme) {
-      case Modes.DARK:
-        document.documentElement.classList.add(Modes.DARK);
-        localStorage.setItem(LocalStorageItems.THEME, Modes.DARK);
-        break;
-      case Modes.LIGHT:
-        document.documentElement.classList.remove(Modes.DARK);
-        localStorage.setItem(LocalStorageItems.THEME, Modes.LIGHT);
-        break;
-      default:
-        localStorage.removeItem(LocalStorageItems.THEME);
-        break;
-    }
-  }, [theme]);
+  switch (theme) {
+    case Modes.DARK:
+      document.documentElement.classList.add(Modes.DARK);
+      localStorage.setItem(LocalStorageItems.THEME, Modes.DARK);
+      break;
+    case Modes.LIGHT:
+      document.documentElement.classList.remove(Modes.DARK);
+      localStorage.setItem(LocalStorageItems.THEME, Modes.LIGHT);
+      break;
+    default:
+      localStorage.setItem(LocalStorageItems.THEME, Modes.SYSTEM);
+      break;
+  }
 }
 
 function darkQueryEventListener() {
-  useEffect(() => {
-    const darkQuery = window.matchMedia('prefers-color-scheme: dark');
+  const darkQuery = window.matchMedia("prefers-color-scheme: dark");
 
-    darkQuery.addEventListener('change', (event) => {
-      if (event.matches) {
-        document.documentElement.classList.add(Modes.DARK);
-      } else {
-        document.documentElement.classList.remove(Modes.DARK);
-      }
-    });
+  darkQuery.addEventListener("change", (event) => {
+    if (event.matches) {
+      document.documentElement.classList.add(Modes.DARK);
+    } else {
+      document.documentElement.classList.remove(Modes.DARK);
+    }
   });
 }
 

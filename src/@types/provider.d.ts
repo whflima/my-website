@@ -1,6 +1,7 @@
 export interface IMyProviderContext {
   theme: string;
   setTheme: Dispatch<SetStateAction<string>>;
+  changeTheme: Dispatch<SetStateAction<string>>;
   changeLanguage: Dispatch<SetStateAction<string>>;
 }
 
