@@ -33,6 +33,12 @@ export default function LanguageSwitcher() {
       flag: "./brazil-flag.svg",
       onClick: () => changeLanguage("pt-br"),
     },
+    {
+      key: "jp",
+      label: t("language.switcher.items-japanese"),
+      flag: "./japan-flag.svg",
+      onClick: () => changeLanguage("jp"),
+    },
   ];
 
   const flagIcon = (flag: string) => {
