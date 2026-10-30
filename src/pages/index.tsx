@@ -1,5 +1,6 @@
 import CareerHistorySection from "@/components/CareerHistorySection";
 import CertificationSection from "@/components/CertificationSection";
+import ContribuitionSection from "@/components/ContribuitionSection";
 import EducationSection from "@/components/EducationSection";
 import Header from "@/components/Header";
 import HomeSection from "@/components/HomeSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <CareerHistorySection />
       <EducationSection />
       <CertificationSection />
+      <ContribuitionSection />
     </main>
   );
 }

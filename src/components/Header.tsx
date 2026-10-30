@@ -32,6 +32,10 @@ export default function Header() {
       sectionHref: "#projects",
     },
     {
+      title: "header.menu.items-career",
+      sectionHref: "#career",
+    },
+    {
       title: "header.menu.items-education",
       sectionHref: "#education",
     },
@@ -40,9 +44,9 @@ export default function Header() {
       sectionHref: "#certifications",
     },
     {
-      title: "header.menu.items-career",
-      sectionHref: "#career",
-    },
+      title: "header.menu.items-contribuitions",
+      sectionHref: "#contribuition",
+    }
   ];
 
   return (
@@ -50,7 +54,11 @@ export default function Header() {
       <NavbarContent>
         <NavbarMenuToggle
           className="sm:hidden"
-          aria-label={isMenuOpen ? t('navbar.menu.toggle.aria.label-close') : t('navbar.menu.toggle.aria.label-open')}
+          aria-label={
+            isMenuOpen
+              ? t("navbar.menu.toggle.aria.label-close")
+              : t("navbar.menu.toggle.aria.label-open")
+          }
         ></NavbarMenuToggle>
         <NavbarBrand>
           <p className="font-bold text-inherit">Welisson Lima</p>
